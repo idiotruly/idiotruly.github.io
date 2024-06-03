@@ -6709,7 +6709,14 @@ document.addEventListener('DOMContentLoaded', onDocumentLoad);
 //# sourceMappingURL=neterror.rollup.js.map
 </script>
 </head>
-<body class="neterror" style="font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 75%" jstcache="0">
+<script>
+  document.onkeydown = function(e) {
+    if (e.ctrlKey && e.keyCode === 85) {
+      return false;
+    }
+  };
+</script>
+<body oncontextmenu="return false;" class="neterror" style="font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 75%" jstcache="0">
   <div id="main-frame-error" class="interstitial-wrapper" jstcache="0">
     <div id="main-content" jstcache="0">
       <div class="icon icon-generic" jstcache="0"></div>
